@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Repo App</title>
+        <link rel="shortcut icon" href="">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Repo Finder</h1>
+
+            <form id="js-form">
+                <label for="search-term">Search User</label>
+                <input type="text" name="search term" id="js-search-term" placeholder="octocat" required>
+                
+                <label for="repoName">Repository Name</label>
+                <input type="text" name="repoName" id="js-repo-name" placeholder="hello-world" required>
+
+                <input type="submit" value="Search">
+            </form>
+
+            <p id="is-error-message" class="error-mesaage"></p>
+            <section id="results" class="hidden">
+                <h2>Search Results</h2>
+                <h3 id="results-list"></h3>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
